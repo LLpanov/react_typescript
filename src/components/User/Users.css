@@ -1,0 +1,15 @@
+.TargetU {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    row-gap: 5px;
+    background-color: lightcoral;
+    padding: .6rem;
+
+
+}
+
+.TargetU p {
+    font-weight: bold;
+
+}

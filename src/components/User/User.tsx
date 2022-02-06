@@ -1,16 +1,11 @@
 import React, {FC} from 'react';
 
 import {IUser} from '../../interfaces';
-import css from '../User/user.module.css'
+import './Users.css'
 
-interface IProps {
-    user: IUser
-}
-
-
-const User: FC<IProps> = ({user: {id, name, username, email}}) => {
+const User: FC<{user:IUser}> = ({user: {id, name, username, email}}) => {
     return (
-        <div className={css.userTarget}>
+        <div className={'TargetU'}>
             <p>Id: {id}</p>
             <p>Name: {name}</p>
             <p>Username: {username}</p>

@@ -1,9 +1,16 @@
 import React, {FC} from 'react';
 
-const Post:FC = () => {
+import {IPost} from '../../interfaces';
+import css from './post.module.css'
+
+const Post: FC<{ post: IPost }> = ({post: {id, userId, title, body}}) => {
     return (
-        <div>
-            Post:FC
+        <div className={css.TargetP}>
+            <p>Id: {id}</p>
+            <p>UserId: {userId}</p>
+            <p>Title: {title}</p>
+            <p>Body :{body}</p>
+
         </div>
     );
 };

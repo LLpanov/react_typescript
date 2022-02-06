@@ -4,6 +4,6 @@ import {urls} from "../Config";
 
 export const commentsService = {
 
-    getAll: () => axiosService.get<IComment>(urls.comments),
+    getAll: () => axiosService.get<IComment[]>(urls.comments),
 
 }

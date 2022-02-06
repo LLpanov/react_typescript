@@ -1,0 +1,10 @@
+.WrapU {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 49%;
+    height: 500px;
+    overflow: scroll;
+
+
+}

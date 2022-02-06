@@ -1,8 +1,9 @@
 import React, {FC, useEffect, useState} from 'react';
 
-import {IUser} from "../../interfaces";
-import {userService} from "../../sercvices";
-import {User} from "../User/User";
+import {IUser} from '../../interfaces';
+import {userService} from '../../sercvices';
+import {User} from '../User/User';
+import css from './users.module.css'
 
 const Users: FC = () => {
 
@@ -14,11 +15,11 @@ const Users: FC = () => {
             setUsers(data)
 
         }
-         getAllUsers()
+        getAllUsers()
 
     }, [])
     return (
-        <div>
+        <div className={css.WrapU}>
             {users.map(user => <User key={user.id} user={user}/>)}
         </div>
     );

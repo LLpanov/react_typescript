@@ -1,0 +1,12 @@
+.TargetC {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    row-gap: 5px;
+    background-color: cadetblue;
+
+}
+
+.TargetC p {
+    font-weight: bold;
+}
